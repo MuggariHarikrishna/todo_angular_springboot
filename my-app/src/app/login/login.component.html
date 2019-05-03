@@ -1,0 +1,8 @@
+
+<div style="text-align: center">
+  <H1>Login!</H1>
+  <p *ngIf="status" style="color:red">{{errorMessage}}</p>
+  username:<input type="text" name="username" [(ngModel)]="username"/><br>
+  password:<input type="password" name="password" [(ngModel)]="password" /><br>
+  <input type="button" value="login" (click)="handleLogin()"/>
+</div>
